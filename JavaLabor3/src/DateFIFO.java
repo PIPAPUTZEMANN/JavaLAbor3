@@ -71,9 +71,9 @@ public class DateFIFO {
 		public int find(Date aDate){
 			int aindex = -1;
 			for (int ae = 0;ae < elements.length;ae++){
-				if (elements[ae].year == aDate.year){
-					if (elements[ae].month==aDate.month){
-						if (elements[ae].day == aDate.day){
+				if (elements[ae].getYear() == aDate.getYear()){
+					if (elements[ae].getMonth()==aDate.getMonth()){
+						if (elements[ae].getDay() == aDate.getDay()){
 							aindex = ae;
 						}
 					}					
